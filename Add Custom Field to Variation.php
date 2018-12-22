@@ -47,7 +47,7 @@ function variable_fields_process( $post_id ) {
 
 /* DISPLAY FIELD ON FRONT END*/
 
-<?php if ( get_post_meta( get_the_ID(), 'thumb', true ) ) : ?>
+if ( get_post_meta( get_the_ID(), 'thumb', true ) ) : ?>
     <a href="<?php the_permalink() ?>" rel="bookmark">
         <img class="thumb" src="<?php echo esc_url( get_post_meta( get_the_ID(), 'thumb', true ) ); ?>" alt="<?php the_title_attribute(); ?>" />
     </a>
