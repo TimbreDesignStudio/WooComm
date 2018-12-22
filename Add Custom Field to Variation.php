@@ -1,6 +1,6 @@
 <?php
 
-// http://www.remicorson.com/mastering-woocommerce-products-custom-fields/
+http://www.remicorson.com/mastering-woocommerce-products-custom-fields/
 
 //Display Fields
 add_action( 'woocommerce_product_after_variable_attributes', 'variable_fields', 10, 2 );
@@ -53,6 +53,7 @@ function variable_fields_process( $post_id ) {
     </a>
 <?php endif; ?>
 
+<?php
 
 function get_post_meta( $post_id, $key = '', $single = false ) {
     return get_metadata('post', $post_id, $key, $single);
